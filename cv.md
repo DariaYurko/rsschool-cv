@@ -1,9 +1,8 @@
 # **Daria Yurko**
 
-Computer engineering
+Computer engineer
 
 <img width="250px" src="./avatar.jpg" alt="my photo"/>
-
 
 ## About me
 
@@ -49,13 +48,40 @@ English (B1)
 
 ## Projects
 
-### kottans-dom
-https://dariayurko.github.io/kottans-dom/
+- kottans-dom
+  https://dariayurko.github.io/kottans-dom/
 
-### handmade-chocolate
-https://dariayurko.github.io/handmade-chocolate/
+- handmade-chocolate
+  https://dariayurko.github.io/handmade-chocolate/
 
-### goit-js-hw-12 (Image search)
-https://dariayurko.github.io/goit-js-hw-12/
+- goit-js-hw-12 (Image search)
+  https://dariayurko.github.io/goit-js-hw-12/
 
+## Сode example
 
+- An example of using the service Pixabay API for project goit-js-hw-12:
+
+```javascript
+import axios from "axios";
+
+async function sendQuery(imageName, pageNumber) {
+  axios.defaults.baseURL = "https://pixabay.com";
+
+  const params = {
+    key: "44349742-ecc8a7b60aea5585f0c207813",
+    q: imageName,
+    image_type: "photo",
+    orientation: "horizontal",
+    safesearch: true,
+    per_page: perPage,
+    page: pageNumber,
+  };
+
+  try {
+    const response = await axios.get("/api/", { params });
+    return response.data;
+  } catch (err) {
+    console.log(err);
+  }
+}
+```
