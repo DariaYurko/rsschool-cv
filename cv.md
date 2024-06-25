@@ -36,7 +36,8 @@ English (B1)
 
 - E-Mail - dariayurkodev@gmail.com
 - Linkedin - [Daria Yurko](https://linkedin.com/in/daria-yurko-270788248)
-- Github [DariaYurko](https://github.com/DariaYurko)
+- Github - [DariaYurko](https://github.com/DariaYurko)
+- Discort - Daria (@DariaYurko)
 
 ## Experience
 
@@ -44,4 +45,17 @@ English (B1)
 
 2. Kottans - _Front-End 2022_ course
 
-- https://dariayurko.github.io/kottans-dom/
+3. Goit - _Fullstack (in process)_
+
+## Projects
+
+### kottans-dom
+https://dariayurko.github.io/kottans-dom/
+
+### handmade-chocolate
+https://dariayurko.github.io/handmade-chocolate/
+
+### goit-js-hw-12 (Image search)
+https://dariayurko.github.io/goit-js-hw-12/
+
+
