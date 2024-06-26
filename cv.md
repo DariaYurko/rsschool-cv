@@ -6,10 +6,9 @@ Computer engineer
 
 ## About me
 
-I have basic knowledge of HTML, CSS and JavaScript, understanding
+Ambitious, highly responsible and goal-oriented junior frontend developer with knowledge of HTML, CSS, JavaScript, understanding
 Linux operating systems and database management
-MySQL (at the entry level). I have great readiness
-learn and develop in a team.
+MySQL.
 
 ## Education
 
@@ -31,7 +30,7 @@ Information technologies <br>
 
 English (B1)
 
-## Contact
+## Contacts
 
 - E-Mail - dariayurkodev@gmail.com
 - Linkedin - [Daria Yurko](https://linkedin.com/in/daria-yurko-270788248)
@@ -54,12 +53,12 @@ English (B1)
 - handmade-chocolate
   https://dariayurko.github.io/handmade-chocolate/
 
-- goit-js-hw-12 (Image search)
-  https://dariayurko.github.io/goit-js-hw-12/
+- picture-finder
+  https://dariayurko.github.io/picture-finder/
 
 ## Сode example
 
-- An example of using the service Pixabay API for project goit-js-hw-12:
+An example of using the service Pixabay API for project [picture-finder](https://dariayurko.github.io/picture-finder/) :
 
 ```javascript
 import axios from "axios";
