@@ -1,14 +1,13 @@
 # **Daria Yurko**
 
-Computer engineer
+Junior Frontend developer
 
 <img width="250px" src="./avatar.jpg" alt="my photo"/>
 
 ## About me
 
-Ambitious, highly responsible and goal-oriented junior frontend developer with knowledge of HTML, CSS, JavaScript, understanding
-Linux operating systems and database management
-MySQL.
+Front-End developer with knowledge of HTML, CSS, JavaScript, understanding Linux
+operating systems and database management MySQL. Ambitious, highly responsible and goal-oriented person.
 
 ## Education
 
