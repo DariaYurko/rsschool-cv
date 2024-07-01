@@ -17,17 +17,18 @@ Information technologies <br>
 
 ## Skills
 
-- HTML basic
-- CSS basic
-- JavaScript basic
-- Git basic
-- Oracle Enterprise Linux
-- Network Administration
+- JavaScript
+- REST API
+- HTML, CSS
+- GIT
+- Oracle Linux
 - MySQL
 
 ## Language
 
-English (B1)
+- English - Intermediate
+- Ukrainian - Native
+- Russian - Native
 
 ## Contacts
 
