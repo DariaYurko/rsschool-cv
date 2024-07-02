@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+/* -------- Reset styles ------- */
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+*:focus {
+   outline: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   background-color: transparent;
+   cursor: pointer;
+   border: none;
+   line-height: 0;
+}
+
+input,
+textarea,
+button {
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   color: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+}
+
+/* -------- / Reset styles ------ */
+
+
+
+/* =============== Сommon styles ============ */
+:root {
+   --yellow-color: #fecb00;
+   --white-bg: #ffffff;
+   --dark-bg: #202026;
+   --contacts-bg: #292a30;
+   --image-bg: #2d2f42;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   color: #282828;
+}
+
+[class*="__container"] {
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.profile,
+.about-me,
+.projects,
+.experience {
+   line-height: 2;
+   padding-top: 30px;
+   padding-right: 40px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+}
+
+.section__title {
+   font-size: 20px;
+   list-style: 1.5;
+   margin-bottom: 20px;
+}
+
+.main__column_black .section__title {
+   border-bottom: 3px solid var(--yellow-color)
+}
+.main__column_white .section__title {
+   border-bottom: 3px solid var(--dark-bg);
+}
+
+/* ============== / Сommon styles =========== */
+
+
+
+
+/* --------  ------- */
+.header {}
+
+.header__container {}
+
+.menu {}
+
+.menu__list {
+   display: flex;
+   gap: 30px;
+}
+
+.menu__item {}
+
+.menu__link {}
+
+/* --------  ------- */
+
+.main__container {
+   display: flex;
+}
+.main__column {
+
+}
+
+.main__column_black {
+   color: #ffffff;
+   background-color: #202026;
+   flex: 0 0 30%;
+}
+
+.main__column_white {
+   color: #282828;
+   background-color: #ffffff;
+   flex-grow: 1;
+}
+/* -------------- */
+
+
+
+/* -------- Profile section ------ */
+.profile {
+   background-color: var(--yellow-color);
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.profile__title {}
+
+.title {
+   font-size: 48px;
+   line-height: 1.5;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+}
+
+.title_strong {
+   font-weight: 700;
+}
+
+.profile__subtitle {
+   text-transform: uppercase;
+}
+
+/* -------- /Profile section ------ */
