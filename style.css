@@ -213,25 +213,8 @@ body {
 
 .section__title {}
 
-
-/* .projects__item {
-   padding-left: 25px;
-   display: flex;
-   align-items: center;
-   column-gap: 15px;
-}
-.projects__item::before {
-   content: "";
-   display: block;
-   width: 10px;
-   height: 10px;
-   border-radius: 4px;
-   background-color: var(--yellow-color);
-   flex-shrink: 0;
-} */
-
 .projects__item {
-   padding-left: 25px;
+   padding-left: 35px;
    position: relative;
 }
 
@@ -258,17 +241,14 @@ body {
    line-height: 2;
 }
 
-.project__live-page {
-
-}
+.project__live-page {}
 
 
 .project__live-page_tech {
    font-weight: 500;
 }
 
-.project__repo {
-}
+.project__repo {}
 
 .project__live-page,
 .project__repo {
@@ -287,6 +267,52 @@ body {
 .project__role {}
 
 /* ------------ /Projects --------- */
+
+
+
+
+/* ------------ Experience --------- */
+.experience {}
+
+.experience__list {
+   line-height: 2;
+}
+
+.experience__item:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.experience__item {}
+
+
+
+.item-experience {
+   display: flex;
+   gap: 80px;
+}
+
+.item-experience__period {
+   flex-shrink: 0;
+}
+
+.item-experience__company {
+   font-weight: 600;
+}
+
+.item-experience__position {}
+
+.item-experience__title {
+   text-decoration: underline;
+}
+
+.item-experience__list {}
+
+.item-experience__item {
+   line-height: 1.5;
+}
+
+
+/* ----------- /Experience --------- */
 
 
 
