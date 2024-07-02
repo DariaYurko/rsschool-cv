@@ -40,14 +40,25 @@
 
          <!-- BLACK COLUMN -->
          <div class="main__column main__column_black">
+            <section class="avatar">
+               <h3 class="avatar__title">Avatar</h3>
+               <div class="avatar__thumb">
+                  <img src="./img/avatar.jpg" alt="Avatar" class="avatar__image" width="300">
+               </div>
+            </section>
+
             <section class="contacts" id="contacts">
                <h3 class="contacts__title">Contacts</h3>
-               <address class="contacts__address">
-                  <p class="contacts__place">Kyiv, Ukraine</p>
-                  <a href="tel:+380967540302" class="contacts__phone">+38 (096) 754 03 02</a>
-                  <a href="mailto:dariayurkodev@gmail.com" class="contacts__email">dariayurkodev@gmail.com</a>
-               </address>
-               <ul class="social">
+               <ul class="contacts__list social">
+                  <li class="social__item">
+                     <address class="social__address">Kyiv, Ukraine</address>
+                  </li>
+                  <li class="social__item">
+                     <a href="tel:+380967540302" class="social__link">+38 (096) 754 03 02</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="mailto:dariayurkodev@gmail.com" class="social__link">dariayurkodev@gmail.com</a>
+                  </li>
                   <li class="social__item">
                      <a href="https://linkedin.com/in/daria-yurko-270788248" class="social__link">LinkedIn</a>
                   </li>
@@ -56,6 +67,9 @@
                   </li>
                   <li class="social__item">
                      <a href="https://t.me/DariaYurko" class="social__link">Telegram</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="" class="social__link">Discort - Daria (@DariaYurko)</a>
                   </li>
                </ul>
             </section>
@@ -172,7 +186,13 @@
       </div>
    </main>
 
-   <footer class="footer"></footer>
+   <footer class="footer">
+      <div class="footer__container">
+         <a href="https://github.com/DariaYurko" class="footer__git">GitHub</a>
+         <span class="footer__year">2024</span>
+         <a href="https://rs.school/courses/javascript-ru" class="footer__logo">logo</a>
+      </div>
+   </footer>
 </body>
 
 </html>

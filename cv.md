@@ -2,7 +2,7 @@
 
 Junior Frontend developer
 
-<img width="250px" src="./avatar.jpg" alt="my photo"/>
+<img width="250px" src="./img/avatar.jpg" alt="my photo"/>
 
 ## About me
 
