@@ -484,11 +484,20 @@ body {
    padding-top: 20px;
    padding-bottom: 20px;
    background-color: var(--yellow-color);
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   column-gap: 20px;
 }
 
-.footer__git {}
+.footer__git {
+   font-weight: 700;
+}
 
-.footer__year {}
+.footer__year {
+   font-weight: 700;
+}
 
 .footer__logo {}
 
