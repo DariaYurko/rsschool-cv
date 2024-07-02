@@ -111,6 +111,7 @@ body {
 .main__column_black .section__title {
    border-bottom: 2px solid var(--yellow-color)
 }
+
 .main__column_white .section__title {
    border-bottom: 2px solid var(--dark-bg);
 }
@@ -148,9 +149,8 @@ body {
 .main__container {
    display: flex;
 }
-.main__column {
 
-}
+.main__column {}
 
 .main__column_black {
    color: #ffffff;
@@ -163,6 +163,7 @@ body {
    background-color: #ffffff;
    flex-grow: 1;
 }
+
 /* ------------------------------- */
 
 
@@ -190,6 +191,7 @@ body {
    text-transform: uppercase;
    letter-spacing: 0.1em;
 }
+
 /* -------- /Profile section ------ */
 
 
@@ -201,6 +203,7 @@ body {
 .about-me__text {
    line-height: 1.5;
 }
+
 /* ------------ /About me --------- */
 
 
@@ -231,6 +234,7 @@ body {
    padding-left: 25px;
    position: relative;
 }
+
 .projects__item::before {
    content: "";
    display: block;
@@ -238,7 +242,7 @@ body {
    height: 10px;
    border-radius: 4px;
    background-color: var(--yellow-color);
-   
+
    position: absolute;
    top: 50%;
    left: 0;
@@ -251,18 +255,37 @@ body {
 }
 
 .project {
+   line-height: 2;
+}
+
+.project__live-page {
 
 }
 
-.project__live-page {}
 
-.project__live-page_tech {}
+.project__live-page_tech {
+   font-weight: 500;
+}
 
-.project__repo {}
+.project__repo {
+}
+
+.project__live-page,
+.project__repo {
+   font-weight: 600;
+   display: block;
+   transition: color 200ms ease;
+}
+
+.project__live-page:hover,
+.project__repo:hover {
+   color: var(--yellow-color);
+}
 
 .project__desc {}
 
 .project__role {}
+
 /* ------------ /Projects --------- */
 
 
