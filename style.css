@@ -95,15 +95,30 @@ body {
 .about-me,
 .projects,
 .experience {
-   padding-top: 30px;
+   /* padding-top: 30px;
    padding-right: 40px;
    padding-bottom: 10px;
-   padding-left: 40px;
+   padding-left: 40px; */
+
+   padding: 30px 40px 10px 40px;
+}
+
+.contacts,
+.skills,
+.languages,
+.education {
+   /* padding-top: 30px;
+   padding-right: 15px;
+   padding-bottom: 10px;
+   padding-left: 40px; */
+
+   padding: 30px 15px 10px 40px;
 }
 
 .section__title {
    font-size: 20px;
    line-height: 2;
+   letter-spacing: 0.1em;
    text-transform: uppercase;
    margin-bottom: 20px;
 }
@@ -155,7 +170,7 @@ body {
 .main__column_black {
    color: #ffffff;
    background-color: #202026;
-   flex: 0 0 30%;
+   flex: 0 0 35%;
 }
 
 .main__column_white {
@@ -223,7 +238,7 @@ body {
    display: block;
    width: 10px;
    height: 10px;
-   border-radius: 4px;
+   border-radius: 50%;
    background-color: var(--yellow-color);
 
    position: absolute;
@@ -292,23 +307,46 @@ body {
 }
 
 .item-experience__period {
+   font-size: 18px;
    flex-shrink: 0;
 }
 
 .item-experience__company {
    font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 10px;
 }
 
 .item-experience__position {}
 
 .item-experience__title {
-   text-decoration: underline;
+   /* text-decoration: underline; */
 }
 
 .item-experience__list {}
 
 .item-experience__item {
    line-height: 1.5;
+   position: relative;
+   padding-left: 25px;
+}
+
+.item-experience__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.item-experience__item::before {
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: var(--yellow-color);
+
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
 }
 
 
@@ -316,4 +354,142 @@ body {
 
 
 
+
+/* ---------------- Avatar --------- */
+.avatar {}
+
+.avatar__thumb {
+   width: 100%;
+}
+
+.avatar__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* -------------- /Avatar ----------- */
+
+
+
+
+
+
+
+/* -------------- Contacts ---------- */
+
+.contacts__list {
+   margin-left: 20px;
+}
+
+.social__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.social__address {
+   font-style: normal;
+}
+
+/* -------------- /Contacts ---------- */
+
+
+
+/* -------------- Skills ---------- */
+.skills {}
+
+.skills__list {
+   margin-left: 20px;
+}
+
+.skills__item {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.skills__item::before {
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: var(--yellow-color);
+}
+
+.skills__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+/* -------------- /Skills ---------- */
+
+
+
+/* -------------- Languages --------- */
+.languages {}
+
+.section__title {}
+
+.languages__list {
+   margin-left: 20px;
+}
+
+.languages__item {}
+
+.languages__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+/* ------------- /Languages --------- */
+
+
+
+/* ------------- Education --------- */
+.education {}
+
+.section__title {}
+
+.education__list {
+   margin-left: 20px;
+}
+
+.education__item {}
+
+.education__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.item-education {}
+
+.item-education__source {
+   font-weight: 600;
+   font-size: 18px;
+}
+
+.item-education__course {}
+
+.item-education__period {}
+
+/* ------------- /Education --------- */
+
 /* ================ /MAIN ================== */
+
+
+
+/* ================ FOOTER ================== */
+.footer {}
+
+.footer__container {}
+
+.footer__inner-container {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: var(--yellow-color);
+}
+
+.footer__git {}
+
+.footer__year {}
+
+.footer__logo {}
+
+/* ================ /FOOTER ================= */
