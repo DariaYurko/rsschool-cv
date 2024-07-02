@@ -61,7 +61,7 @@ img {
 html,
 body {
    height: 100%;
-   line-height: 1;
+   line-height: 1.5;
 }
 
 /* -------- / Reset styles ------ */
@@ -95,7 +95,6 @@ body {
 .about-me,
 .projects,
 .experience {
-   line-height: 2;
    padding-top: 30px;
    padding-right: 40px;
    padding-bottom: 10px;
@@ -104,15 +103,16 @@ body {
 
 .section__title {
    font-size: 20px;
-   list-style: 1.5;
+   line-height: 2;
+   text-transform: uppercase;
    margin-bottom: 20px;
 }
 
 .main__column_black .section__title {
-   border-bottom: 3px solid var(--yellow-color)
+   border-bottom: 2px solid var(--yellow-color)
 }
 .main__column_white .section__title {
-   border-bottom: 3px solid var(--dark-bg);
+   border-bottom: 2px solid var(--dark-bg);
 }
 
 /* ============== / Сommon styles =========== */
@@ -120,8 +120,11 @@ body {
 
 
 
-/* --------  ------- */
-.header {}
+/* ================ HEADER ================== */
+.header {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
 
 .header__container {}
 
@@ -136,7 +139,11 @@ body {
 
 .menu__link {}
 
-/* --------  ------- */
+/* ================ /HEADER ================== */
+
+
+
+/* ================== MAIN =================== */
 
 .main__container {
    display: flex;
@@ -156,8 +163,7 @@ body {
    background-color: #ffffff;
    flex-grow: 1;
 }
-/* -------------- */
-
+/* ------------------------------- */
 
 
 /* -------- Profile section ------ */
@@ -182,6 +188,83 @@ body {
 
 .profile__subtitle {
    text-transform: uppercase;
+   letter-spacing: 0.1em;
+}
+/* -------- /Profile section ------ */
+
+
+/* ------------ About me ---------- */
+.about-me {}
+
+.section__title {}
+
+.about-me__text {
+   line-height: 1.5;
+}
+/* ------------ /About me --------- */
+
+
+
+/* ------------ Projects ---------- */
+.projects {}
+
+.section__title {}
+
+
+/* .projects__item {
+   padding-left: 25px;
+   display: flex;
+   align-items: center;
+   column-gap: 15px;
+}
+.projects__item::before {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-radius: 4px;
+   background-color: var(--yellow-color);
+   flex-shrink: 0;
+} */
+
+.projects__item {
+   padding-left: 25px;
+   position: relative;
+}
+.projects__item::before {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-radius: 4px;
+   background-color: var(--yellow-color);
+   
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
 }
 
-/* -------- /Profile section ------ */
+
+.projects__item:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.project {
+
+}
+
+.project__live-page {}
+
+.project__live-page_tech {}
+
+.project__repo {}
+
+.project__desc {}
+
+.project__role {}
+/* ------------ /Projects --------- */
+
+
+
+/* ================ /MAIN ================== */
