@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My CV</title>
+   <title>Daria Yurko</title>
    <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -42,14 +42,14 @@
          <!-- BLACK COLUMN -->
          <div class="main__column main__column_black">
             <section class="avatar">
-               <!-- <h3 class="section__title">Avatar</h3> -->
+               <!-- <h2 class="section__title">Avatar</h2> -->
                <div class="avatar__thumb">
                   <img src="./img/avatar.jpg" alt="Avatar" class="avatar__image">
                </div>
             </section>
 
             <section class="skills" id="skills">
-               <h3 class="section__title">Skills</h3>
+               <h2 class="section__title">Skills</h2>
                <ul class="skills__list">
                   <li class="skills__item">JavaScript</li>
                   <li class="skills__item">REST API</li>
@@ -61,7 +61,7 @@
             </section>
 
             <section class="education" id="education">
-               <h3 class="section__title">Education</h3>
+               <h2 class="section__title">Education</h2>
                <ul class="education__list">
                   <li class="education__item item-education">
                      <p class="item-education__source">IT School GoIT</p>
@@ -82,7 +82,7 @@
             </section>
 
             <section class="languages">
-               <h3 class="section__title">Languages</h3>
+               <h2 class="section__title">Languages</h2>
                <ul class="languages__list">
                   <li class="languages__item">English - Intermediate</li>
                   <li class="languages__item">Ukrainian - Native</li>
@@ -91,7 +91,7 @@
             </section>
 
             <section class="contacts" id="contacts">
-               <h3 class="section__title">Contacts</h3>
+               <h2 class="section__title">Contacts</h2>
                <ul class="contacts__list social">
                   <li class="social__item">
                      <address class="social__address">Kyiv, Ukraine</address>
@@ -121,19 +121,24 @@
          <!-- WHITE COLUMN -->
          <div class="main__column main__column_white">
             <section class="profile" id="profile">
-               <h1 class="profile__title title"><span class="title_strong">Daria&nbsp;</span>Yurko</h1>
-               <h2 class="profile__subtitle">Frontend developer</h2>
+               <h1 class="profile__title title">
+                  <span class="title__strong">Daria&nbsp;</span>Yurko
+                  <span class="title__uppercase">Frontend developer</span>
+               </h1>
+               <div class="profile__thumb">
+                  <img src="./img/avatar.jpg" alt="Avatar" class="profile__image">
+               </div>
             </section>
 
             <section class="about-me" id="about-me">
-               <h3 class="section__title">About me</h3>
+               <h2 class="section__title">About me</h2>
                <p class="about-me__text">Front-End developer with knowledge of HTML, CSS, JavaScript, understanding
                   Linux operating systems and database
                   management MySQL. Ambitious, highly responsible and goal-oriented person.</p>
             </section>
 
             <section class="projects" id="projects">
-               <h3 class="section__title">Projects</h3>
+               <h2 class="section__title">Projects</h2>
                <ul class="projects__list">
                   <li class="projects__item project">
                      <a href="https://dariayurko.github.io/kottans-dom/" class="project__live-page">Menu DOM <span
@@ -162,12 +167,12 @@
             </section>
 
             <section class="experience" id="experience">
-               <h3 class="section__title">Work experience</h3>
+               <h2 class="section__title">Work experience</h2>
                <ul class="experience__list">
                   <li class="experience__item item-experience">
                      <div class="item-experience__period">2017 - 2022</div>
                      <div class="item-experience__info">
-                        <h4 class="item-experience__company">Regional service center MVS</h4>
+                        <h3 class="item-experience__company">Regional service center MVS</h3>
                         <p class="item-experience__position">Administrator</p>
                         <p class="item-experience__title">Responsibilities:</p>
                         <ul class="item-experience__list">
@@ -183,7 +188,7 @@
                   <li class="experience__item item-experience">
                      <div class="item-experience__period">2015 - 2017</div>
                      <div class="item-experience__info">
-                        <h4 class="item-experience__company">Dnipropetrovsk SRFC of Ukraine</h4>
+                        <h3 class="item-experience__company">Dnipropetrovsk SRFC of Ukraine</h3>
                         <p class="item-experience__position">Expert service operator</p>
                      </div>
                   </li>
@@ -191,12 +196,12 @@
             </section>
 
             <section class="code">
-               <h3 class="section__title">Code example</h3>
+               <h2 class="section__title">Code example</h2>
                <p class="code__description">
                   An example of using the service Pixabay API for project
                   <a href="https://dariayurko.github.io/picture-finder/">Picture-finder</a>
                </p>
-               <pre class="code__examle">
+               <pre class="code__example">
                   <code>
 import axios from "axios";
 

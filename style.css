@@ -101,7 +101,7 @@ body {
    padding-bottom: 10px;
    padding-left: 40px; */
 
-   padding: 30px 40px 10px 40px;
+   padding: 20px 40px 20px 40px;
 }
 
 .contacts,
@@ -113,7 +113,7 @@ body {
    padding-bottom: 10px;
    padding-left: 40px; */
 
-   padding: 30px 15px 10px 40px;
+   padding: 20px 15px 20px 40px;
 }
 
 .section__title {
@@ -153,7 +153,8 @@ body {
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-end;
-   gap: 30px;
+   column-gap: 30px;
+   row-gap: 10px;
 }
 
 .menu__item {
@@ -231,13 +232,27 @@ body {
    text-transform: uppercase;
 }
 
-.title_strong {
+.title__strong {
    font-weight: 700;
 }
 
-.profile__subtitle {
+.title__uppercase {
+   display: block;
+   font-size: 16px;
    text-transform: uppercase;
    letter-spacing: 0.1em;
+}
+
+.profile__thumb {
+   display: none;
+   background-color: var(--image-bg);
+   width: 100%;
+}
+
+.profile__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 /* -------- /Profile section ------ */
@@ -393,7 +408,7 @@ body {
    font-weight: 600;
 }
 
-.code__examle {
+.code__example {
    display: flex;
    justify-content: center;
 }
@@ -600,3 +615,110 @@ body {
 }
 
 /* ================ /FOOTER ================= */
+
+@media only screen and (max-width: 920px) {
+   .item-experience {
+      gap: 40px;
+   }
+
+   .code__example {
+      font-size: 12px;
+   }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   body {
+      font-size: 14px;
+   }
+
+   .section__title {
+      font-size: 16px;
+   }
+
+
+   .menu__list {
+      justify-content: center;
+   }
+
+   .menu__link {
+      font-size: 12px;
+   }
+
+   .main__container {
+      flex-direction: column-reverse;
+   }
+
+   .profile {
+      padding: 20px;
+   }
+
+   .title {
+      font-size: 35px;
+   }
+
+   .item-experience__company,
+   .item-education__source {
+      font-size: 16px;
+   }
+
+   .item-experience {
+      flex-direction: column-reverse;
+      gap: 10px;
+   }
+
+   .item-experience__period {
+      font-size: 14px;
+   }
+
+   .code__example {
+      justify-content: flex-start;
+   }
+
+   .avatar {
+      display: none;
+   }
+
+   .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+
+   }
+
+   .profile__thumb {
+      display: block;
+      max-width: 300px;
+   }
+}
+
+@media only screen and (max-width: 425px) {
+   .menu__list {
+      row-gap: 10px;
+   }
+
+   .title {
+      font-size: 30px;
+   }
+
+   .code {
+      display: none;
+   }
+
+   .footer__inner-container {
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+
+   .footer__git,
+   .footer__year {
+      font-size: 14px;
+   }
+
+   .footer__logo {
+      width: 50px;
+   }
+
+}
