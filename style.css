@@ -139,10 +139,10 @@ body {
 
 /* ================ HEADER ================== */
 .header {
-   padding-top: 50px;
-   padding-bottom: 50px;
+   padding-top: 30px;
+   padding-bottom: 30px;
 
-   /* background-color: var(--yellow-color); */
+   /* background-color: var(--dark-bg); */
 }
 
 .header__container {}
@@ -152,6 +152,7 @@ body {
 .menu__list {
    display: flex;
    flex-wrap: wrap;
+   justify-content: flex-end;
    gap: 30px;
 }
 
@@ -162,9 +163,11 @@ body {
 
 .menu__link {
    font-weight: 600;
-   text-transform: capitalize;
-   letter-spacing: 0.1em;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 0.09em;
    line-height: 2;
+   /* color: var(--white-bg); */
 }
 
 .menu__link::before {
@@ -404,6 +407,7 @@ body {
 .avatar {}
 
 .avatar__thumb {
+   background-color: var(--image-bg);
    width: 100%;
 }
 
@@ -418,14 +422,14 @@ body {
 
 
 
-
-
-
 /* -------------- Contacts ---------- */
+.contacts {}
 
 .contacts__list {
    margin-left: 20px;
 }
+
+.social__item {}
 
 .social__item:not(:last-child) {
    margin-bottom: 10px;
@@ -435,7 +439,31 @@ body {
    font-style: normal;
 }
 
+.social__link {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+}
+
+.social__link::after {
+   content: "";
+   display: inline-block;
+   width: 100%;
+   height: 2px;
+   background-color: var(--yellow-color);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translateX(-100%);
+   transition: transform 250ms ease;
+}
+
+.social__link:hover.social__link::after {
+   transform: translateX(0);
+}
+
 /* -------------- /Contacts ---------- */
+
 
 
 
@@ -521,6 +549,10 @@ body {
 
 
 /* ================ FOOTER ================== */
+.footer {
+   /* background-color: var(--yellow-color); */
+}
+
 .footer__container {}
 
 .footer__inner-container {
@@ -536,12 +568,35 @@ body {
 
 .footer__git {
    font-weight: 700;
+   transform: scale(1);
+   transition: transform 250ms ease;
+}
+
+.footer__git:hover {
+   transform: scale(1.2);
 }
 
 .footer__year {
    font-weight: 700;
 }
 
-.footer__logo {}
+.footer__logo {
+   width: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: scale(1);
+   transition: transform 250ms ease;
+}
+
+.footer__logo:hover {
+   transform: scale(1.2);
+}
+
+.footer__logo-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
 /* ================ /FOOTER ================= */
