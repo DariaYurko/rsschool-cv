@@ -94,7 +94,8 @@ body {
 .profile,
 .about-me,
 .projects,
-.experience {
+.experience,
+.code {
    /* padding-top: 30px;
    padding-right: 40px;
    padding-bottom: 10px;
@@ -140,6 +141,8 @@ body {
 .header {
    padding-top: 50px;
    padding-bottom: 50px;
+
+   /* background-color: var(--yellow-color); */
 }
 
 .header__container {}
@@ -355,6 +358,20 @@ body {
 
 
 
+/* -------------  Code ----------- */
+.code__description {
+   font-weight: 600;
+}
+.code__examle {
+   /* margin-left: 20px; */
+   display: flex;
+   justify-content: center;
+}
+/* ------------- /Code ----------- */
+
+
+
+
 /* ---------------- Avatar --------- */
 .avatar {}
 
@@ -476,8 +493,6 @@ body {
 
 
 /* ================ FOOTER ================== */
-.footer {}
-
 .footer__container {}
 
 .footer__inner-container {
@@ -502,3 +517,4 @@ body {
 .footer__logo {}
 
 /* ================ /FOOTER ================= */
+

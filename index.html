@@ -189,6 +189,40 @@
                   </li>
                </ul>
             </section>
+
+            <section class="code">
+               <h3 class="section__title">Code example</h3>
+               <p class="code__description">
+                  An example of using the service Pixabay API for project 
+                  <a href="https://dariayurko.github.io/picture-finder/">Picture-finder</a>
+               </p>
+               <pre class="code__examle">
+                  <code>
+import axios from "axios";
+
+async function sendQuery(imageName, pageNumber) {
+   axios.defaults.baseURL = "https://pixabay.com";
+   
+   const params = {
+      key: "44349742-ecc8a7b60aea5585f0c207813",
+      q: imageName,
+      image_type: "photo",
+      orientation: "horizontal",
+      safesearch: true,
+      per_page: perPage,
+      page: pageNumber,
+   };
+   
+   try {
+      const response = await axios.get("/api/", { params });
+      return response.data;
+   } catch (err) {
+      console.log(err);
+   }
+}
+                  </code>
+               </pre>
+            </section>
          </div>
 
       </div>
