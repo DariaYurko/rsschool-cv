@@ -91,16 +91,24 @@ body {
    padding-right: 15px;
 }
 
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
 .profile,
 .about-me,
 .projects,
 .experience,
 .code {
-   /* padding-top: 30px;
-   padding-right: 40px;
-   padding-bottom: 10px;
-   padding-left: 40px; */
-
    padding: 20px 40px 20px 40px;
 }
 
@@ -108,11 +116,6 @@ body {
 .skills,
 .languages,
 .education {
-   /* padding-top: 30px;
-   padding-right: 15px;
-   padding-bottom: 10px;
-   padding-left: 40px; */
-
    padding: 20px 15px 20px 40px;
 }
 
@@ -141,13 +144,7 @@ body {
 .header {
    padding-top: 30px;
    padding-bottom: 30px;
-
-   /* background-color: var(--dark-bg); */
 }
-
-.header__container {}
-
-.menu {}
 
 .menu__list {
    display: flex;
@@ -168,7 +165,6 @@ body {
    text-transform: uppercase;
    letter-spacing: 0.09em;
    line-height: 2;
-   /* color: var(--white-bg); */
 }
 
 .menu__link::before {
@@ -199,8 +195,6 @@ body {
    display: flex;
 }
 
-.main__column {}
-
 .main__column_black {
    color: #ffffff;
    background-color: #202026;
@@ -222,8 +216,6 @@ body {
    padding-top: 50px;
    padding-bottom: 50px;
 }
-
-.profile__title {}
 
 .title {
    font-size: 48px;
@@ -258,10 +250,10 @@ body {
 /* -------- /Profile section ------ */
 
 
-/* ------------ About me ---------- */
-.about-me {}
 
-.section__title {}
+
+
+/* ------------ About me ---------- */
 
 .about-me__text {
    line-height: 1.5;
@@ -271,11 +263,9 @@ body {
 
 
 
+
+
 /* ------------ Projects ---------- */
-.projects {}
-
-.section__title {}
-
 .projects__item {
    padding-left: 35px;
    position: relative;
@@ -304,14 +294,9 @@ body {
    line-height: 2;
 }
 
-.project__live-page {}
-
-
 .project__live-page_tech {
    font-weight: 500;
 }
-
-.project__repo {}
 
 .project__live-page,
 .project__repo {
@@ -324,19 +309,12 @@ body {
 .project__repo:hover {
    color: var(--yellow-color);
 }
-
-.project__desc {}
-
-.project__role {}
-
 /* ------------ /Projects --------- */
 
 
 
 
 /* ------------ Experience --------- */
-.experience {}
-
 .experience__list {
    line-height: 2;
 }
@@ -344,10 +322,6 @@ body {
 .experience__item:not(:last-child) {
    margin-bottom: 20px;
 }
-
-.experience__item {}
-
-
 
 .item-experience {
    display: flex;
@@ -364,14 +338,6 @@ body {
    font-size: 18px;
    margin-bottom: 10px;
 }
-
-.item-experience__position {}
-
-.item-experience__title {
-   /* text-decoration: underline; */
-}
-
-.item-experience__list {}
 
 .item-experience__item {
    line-height: 1.5;
@@ -397,7 +363,6 @@ body {
    transform: translateY(-50%);
 }
 
-
 /* ----------- /Experience --------- */
 
 
@@ -419,8 +384,6 @@ body {
 
 
 /* ---------------- Avatar --------- */
-.avatar {}
-
 .avatar__thumb {
    background-color: var(--image-bg);
    width: 100%;
@@ -438,13 +401,9 @@ body {
 
 
 /* -------------- Contacts ---------- */
-.contacts {}
-
 .contacts__list {
    margin-left: 20px;
 }
-
-.social__item {}
 
 .social__item:not(:last-child) {
    margin-bottom: 10px;
@@ -483,8 +442,6 @@ body {
 
 
 /* -------------- Skills ---------- */
-.skills {}
-
 .skills__list {
    margin-left: 20px;
 }
@@ -513,15 +470,9 @@ body {
 
 
 /* -------------- Languages --------- */
-.languages {}
-
-.section__title {}
-
 .languages__list {
    margin-left: 20px;
 }
-
-.languages__item {}
 
 .languages__item:not(:last-child) {
    margin-bottom: 10px;
@@ -532,10 +483,6 @@ body {
 
 
 /* ------------- Education --------- */
-.education {}
-
-.section__title {}
-
 .education__list {
    margin-left: 20px;
 }
@@ -546,17 +493,10 @@ body {
    margin-bottom: 15px;
 }
 
-.item-education {}
-
 .item-education__source {
    font-weight: 600;
    font-size: 18px;
 }
-
-.item-education__course {}
-
-.item-education__period {}
-
 /* ------------- /Education --------- */
 
 /* ================ /MAIN ================== */
@@ -564,12 +504,6 @@ body {
 
 
 /* ================ FOOTER ================== */
-.footer {
-   /* background-color: var(--yellow-color); */
-}
-
-.footer__container {}
-
 .footer__inner-container {
    padding-top: 20px;
    padding-bottom: 20px;
