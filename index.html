@@ -4,12 +4,249 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My CV</title>
+   <title>CV Daria Yurko</title>
+   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-   <h1>This is a Heading</h1>
-   <p>This is a paragraph.</p>
+   <header class="header">
+      <div class="header__container">
+         <nav class="menu ">
+            <ul class="menu__list">
+               <li class="menu__item">
+                  <a href="#about-me" class="menu__link">About me</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#projects" class="menu__link">Projects</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#experience" class="menu__link">Experience</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#contacts" class="menu__link">Contacts</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#skills" class="menu__link">Skills</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#education" class="menu__link">Education</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#code" class="menu__link">Code</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="main">
+      <div class="main__container">
+
+         <!-- BLACK COLUMN -->
+         <div class="main__column main__column_black">
+            <section class="avatar">
+               <h2 class="section-title visually-hidden">Avatar</h2>
+               <div class="avatar__thumb">
+                  <img src="./img/avatar.jpg" alt="Avatar Daria Yurko" class="avatar__image">
+               </div>
+            </section>
+
+            <section class="skills" id="skills">
+               <h2 class="section-title">Skills</h2>
+               <ul class="skills__list">
+                  <li class="skills__item">JavaScript</li>
+                  <li class="skills__item">REST API</li>
+                  <li class="skills__item">HTML, CSS</li>
+                  <li class="skills__item">GIT</li>
+                  <li class="skills__item">Oracle Linux</li>
+                  <li class="skills__item">MySQL</li>
+               </ul>
+            </section>
+
+            <section class="education" id="education">
+               <h2 class="section-title">Education</h2>
+               <ul class="education__list">
+                  <li class="education__item item-education">
+                     <p class="item-education__source">IT School GoIT</p>
+                     <p class="item-education__course">Frontend</p>
+                     <p class="item-education__period">2023-2024</p>
+                  </li>
+                  <li class="education__item item-education">
+                     <p class="item-education__source">Education center PortaOne</p>
+                     <p class="item-education__course">Linux & Network Administration</p>
+                     <p class="item-education__period">2022-2023</p>
+                  </li>
+                  <li class="education__item item-education">
+                     <p class="item-education__source">Kryvyi Rih National University</p>
+                     <p class="item-education__course">Computer Engineering</p>
+                     <p class="item-education__period">2005-2010</p>
+                  </li>
+               </ul>
+            </section>
+
+            <section class="languages">
+               <h2 class="section-title">Languages</h2>
+               <ul class="languages__list">
+                  <li class="languages__item">English - Intermediate</li>
+                  <li class="languages__item">Ukrainian - Native</li>
+                  <li class="languages__item">Russian - Native</li>
+               </ul>
+            </section>
+
+            <section class="contacts" id="contacts">
+               <h2 class="section-title">Contacts</h2>
+               <ul class="contacts__list social">
+                  <li class="social__item">
+                     <address class="social__address">Kyiv, Ukraine</address>
+                  </li>
+                  <li class="social__item">
+                     <a href="tel:+380967540302" class="social__link">+38 096 754 03 02</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="mailto:dariayurkodev@gmail.com" class="social__link">dariayurkodev@gmail.com</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="https://linkedin.com/in/daria-yurko-270788248" class="social__link">LinkedIn</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="https://github.com/DariaYurko" class="social__link">GitHub</a>
+                  </li>
+                  <li class="social__item">
+                     <a href="https://t.me/DariaYurko" class="social__link">Telegram</a>
+                  </li>
+                  <li class="social__item">
+                     <p class="social__discort">Discort - Daria (@DariaYurko)</p>
+                  </li>
+               </ul>
+            </section>
+         </div>
+
+         <!-- WHITE COLUMN -->
+         <div class="main__column main__column_white">
+            <section class="profile" id="profile">
+               <h1 class="profile__title title">
+                  <span class="title__strong">Daria&nbsp;</span>Yurko
+                  <span class="title__uppercase">Frontend developer</span>
+               </h1>
+               <div class="profile__thumb">
+                  <img src="./img/avatar.jpg" alt="Avatar" class="profile__image">
+               </div>
+            </section>
+
+            <section class="about-me" id="about-me">
+               <h2 class="section-title">About me</h2>
+               <p class="about-me__text">Front-End developer with knowledge of HTML, CSS, JavaScript, understanding
+                  Linux operating systems and database
+                  management MySQL. Ambitious, highly responsible and goal-oriented person.</p>
+            </section>
+
+            <section class="projects" id="projects">
+               <h2 class="section-title">Projects</h2>
+               <ul class="projects__list">
+                  <li class="projects__item project">
+                     <a href="https://dariayurko.github.io/kottans-dom/" class="project__live-page">Menu DOM <span
+                           class="project__live-page_tech">(HTML, SCSS, JavaScript)</span></a>
+                     <a href="https://github.com/DariaYurko/kottans-dom" class="project__repo">GitHub-repository</a>
+                     <p class="project__desc">Responsive menu that will load some HTML content.</p>
+                     <p class="project__role">Role: Developer (individual project)</p>
+                  </li>
+                  <li class="projects__item project">
+                     <a href="https://dariayurko.github.io/handmade-chocolate/" class="project__live-page">Handmade
+                        chocolate <span class="project__live-page_tech">(HTML, SCSS, JavaScript)</span></a>
+                     <a href="https://github.com/DariaYurko/handmade-chocolate"
+                        class="project__repo">GitHub-repository</a>
+                     <p class="project__desc">A landing page with adaptive design, animations,
+                        modal windows, and burger menu.</p>
+                     <p class="project__role">Role: Developer (individual project)</p>
+                  </li>
+                  <li class="projects__item project">
+                     <a href="https://dariayurko.github.io/picture-finder/" class="project__live-page">Picture
+                        finder<span class="project__live-page_tech">(HTML, CSS, JavaScript, REST API, Vite)</span></a>
+                     <a href="https://github.com/DariaYurko/picture-finder" class="project__repo">GitHub-repository</a>
+                     <p class="project__desc">Responsive menu that will load some HTML content.</p>
+                     <p class="project__role">Role: Developer (individual project)</p>
+                  </li>
+               </ul>
+            </section>
+
+            <section class="experience" id="experience">
+               <h2 class="section-title">Work experience</h2>
+               <ul class="experience__list">
+                  <li class="experience__item item-experience">
+                     <div class="item-experience__period">2017 - 2022</div>
+                     <div class="item-experience__info">
+                        <h3 class="item-experience__company">Regional service center MVS</h3>
+                        <p class="item-experience__position">Administrator</p>
+                        <p class="item-experience__title">Responsibilities:</p>
+                        <ul class="item-experience__list">
+                           <li class="item-experience__item">Verify and process owner and vehicle documents,
+                              ensuring data accuracy</li>
+                           <li class="item-experience__item">Enter information into the government database and
+                              issue registration plates and documents</li>
+                           <li class="item-experience__item">Provide consultations on registration procedures and
+                              assist with completing necessary forms</li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="experience__item item-experience">
+                     <div class="item-experience__period">2015 - 2017</div>
+                     <div class="item-experience__info">
+                        <h3 class="item-experience__company">Dnipropetrovsk SRFC of Ukraine</h3>
+                        <p class="item-experience__position">Expert service operator</p>
+                     </div>
+                  </li>
+               </ul>
+            </section>
+
+            <section class="code" id="code">
+               <h2 class="section-title">Code example</h2>
+               <p class="code__description">
+                  An example of using the service Pixabay API for project
+                  <a href="https://dariayurko.github.io/picture-finder/">Picture-finder</a>
+               </p>
+               <pre class="code__example">
+                  <code>
+import axios from "axios";
+
+async function sendQuery(imageName, pageNumber) {
+   axios.defaults.baseURL = "https://pixabay.com";
+   
+   const params = {
+      key: "44349742-ecc8a7b60aea5585f0c207813",
+      q: imageName,
+      image_type: "photo",
+      orientation: "horizontal",
+      safesearch: true,
+      per_page: perPage,
+      page: pageNumber,
+   };
+   
+   try {
+      const response = await axios.get("/api/", { params });
+      return response.data;
+   } catch (err) {
+      console.log(err);
+   }
+}
+                  </code>
+               </pre>
+            </section>
+         </div>
+
+      </div>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__inner-container">
+            <a href="https://github.com/DariaYurko" class="footer__git">GitHub</a>
+            <span class="footer__year">2024</span>
+            <a href="https://rs.school/courses/javascript-ru" class="footer__logo">
+               <img class="footer__logo-img" src="./img/rsschool-logo.svg" alt="Logotype">
+            </a>
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>
