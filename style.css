@@ -1,0 +1,655 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
+
+/* -------- Reset styles ------- */
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+*:focus {
+   outline: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   background-color: transparent;
+   cursor: pointer;
+   border: none;
+   line-height: 0;
+}
+
+input,
+textarea,
+button {
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   color: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1.5;
+}
+
+/* -------- / Reset styles ------ */
+
+
+
+/* =============== Сommon styles ============ */
+:root {
+   --yellow-color: #fecb00;
+   --white-bg: #ffffff;
+   --dark-bg: #202026;
+   --contacts-bg: #292a30;
+   --image-bg: #2d2f42;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   color: #282828;
+}
+
+[class*="__container"] {
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.profile,
+.about-me,
+.projects,
+.experience,
+.code {
+   padding: 20px 40px 20px 40px;
+}
+
+.contacts,
+.skills,
+.languages,
+.education {
+   padding: 20px 15px 20px 40px;
+}
+
+.section-title {
+   font-size: 20px;
+   line-height: 2;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.main__column_black .section-title {
+   border-bottom: 2px solid var(--yellow-color)
+}
+
+.main__column_white .section-title {
+   border-bottom: 2px solid var(--dark-bg);
+}
+
+/* ============== / Сommon styles =========== */
+
+
+
+
+/* ================ HEADER ================== */
+.header {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   column-gap: 30px;
+   row-gap: 10px;
+}
+
+.menu__item {
+   position: relative;
+   overflow: hidden;
+}
+
+.menu__link {
+   font-weight: 600;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 0.09em;
+   line-height: 2;
+}
+
+.menu__link::before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: var(--yellow-color);
+
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translateX(-100%);
+   transition: transform 250ms ease;
+}
+
+.menu__link:hover.menu__link::before {
+   transform: translateX(0);
+}
+
+/* ================ /HEADER ================== */
+
+
+
+/* ================== MAIN =================== */
+
+.main__container {
+   display: flex;
+}
+
+.main__column_black {
+   color: #ffffff;
+   background-color: #202026;
+   flex: 0 0 35%;
+}
+
+.main__column_white {
+   color: #282828;
+   background-color: #ffffff;
+   flex-grow: 1;
+}
+
+/* ------------------------------- */
+
+
+/* -------- Profile section ------ */
+.profile {
+   background-color: var(--yellow-color);
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.title {
+   font-size: 48px;
+   line-height: 1.5;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+}
+
+.title__strong {
+   font-weight: 700;
+}
+
+.title__uppercase {
+   display: block;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+}
+
+.profile__thumb {
+   display: none;
+   background-color: var(--image-bg);
+   width: 100%;
+}
+
+.profile__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* -------- /Profile section ------ */
+
+
+
+
+
+/* ------------ About me ---------- */
+
+.about-me__text {
+   line-height: 1.5;
+}
+
+/* ------------ /About me --------- */
+
+
+
+
+
+/* ------------ Projects ---------- */
+.projects__item {
+   padding-left: 35px;
+   position: relative;
+}
+
+.projects__item::before {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: var(--yellow-color);
+
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+
+.projects__item:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.project {
+   line-height: 2;
+}
+
+.project__live-page_tech {
+   font-weight: 500;
+}
+
+.project__live-page,
+.project__repo {
+   font-weight: 600;
+   display: block;
+   transition: color 200ms ease;
+}
+
+.project__live-page:hover,
+.project__repo:hover {
+   color: var(--yellow-color);
+}
+/* ------------ /Projects --------- */
+
+
+
+
+/* ------------ Experience --------- */
+.experience__list {
+   line-height: 2;
+}
+
+.experience__item:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.item-experience {
+   display: flex;
+   gap: 80px;
+}
+
+.item-experience__period {
+   font-size: 18px;
+   flex-shrink: 0;
+}
+
+.item-experience__company {
+   font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.item-experience__item {
+   line-height: 1.5;
+   position: relative;
+   padding-left: 25px;
+}
+
+.item-experience__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.item-experience__item::before {
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: var(--yellow-color);
+
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+/* ----------- /Experience --------- */
+
+
+
+
+/* -------------  Code ----------- */
+.code__description {
+   font-weight: 600;
+}
+
+.code__example {
+   display: flex;
+   justify-content: center;
+}
+
+/* ------------- /Code ----------- */
+
+
+
+
+/* ---------------- Avatar --------- */
+.avatar__thumb {
+   background-color: var(--image-bg);
+   width: 100%;
+}
+
+.avatar__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* -------------- /Avatar ----------- */
+
+
+
+
+/* -------------- Contacts ---------- */
+.contacts__list {
+   margin-left: 20px;
+}
+
+.social__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.social__address {
+   font-style: normal;
+}
+
+.social__link {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+}
+
+.social__link::after {
+   content: "";
+   display: inline-block;
+   width: 100%;
+   height: 2px;
+   background-color: var(--yellow-color);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translateX(-100%);
+   transition: transform 250ms ease;
+}
+
+.social__link:hover.social__link::after {
+   transform: translateX(0);
+}
+
+/* -------------- /Contacts ---------- */
+
+
+
+
+/* -------------- Skills ---------- */
+.skills__list {
+   margin-left: 20px;
+}
+
+.skills__item {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.skills__item::before {
+   content: "";
+   display: block;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: var(--yellow-color);
+}
+
+.skills__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+/* -------------- /Skills ---------- */
+
+
+
+/* -------------- Languages --------- */
+.languages__list {
+   margin-left: 20px;
+}
+
+.languages__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+/* ------------- /Languages --------- */
+
+
+
+/* ------------- Education --------- */
+.education__list {
+   margin-left: 20px;
+}
+
+.education__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.item-education__source {
+   font-weight: 600;
+   font-size: 18px;
+}
+/* ------------- /Education --------- */
+
+/* ================ /MAIN ================== */
+
+
+
+/* ================ FOOTER ================== */
+.footer__inner-container {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: var(--yellow-color);
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   column-gap: 20px;
+}
+
+.footer__git {
+   font-weight: 700;
+   transform: scale(1);
+   transition: transform 250ms ease;
+}
+
+.footer__git:hover {
+   transform: scale(1.2);
+}
+
+.footer__year {
+   font-weight: 700;
+}
+
+.footer__logo {
+   width: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: scale(1);
+   transition: transform 250ms ease;
+}
+
+.footer__logo:hover {
+   transform: scale(1.2);
+}
+
+.footer__logo-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* ================ /FOOTER ================= */
+
+@media only screen and (max-width: 920px) {
+   .item-experience {
+      gap: 40px;
+   }
+
+   .code__example {
+      font-size: 12px;
+   }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   body {
+      font-size: 14px;
+   }
+
+   .section-title {
+      font-size: 16px;
+   }
+
+
+   .menu__list {
+      justify-content: center;
+   }
+
+   .menu__link {
+      font-size: 12px;
+   }
+
+   .main__container {
+      flex-direction: column-reverse;
+   }
+
+   .profile {
+      padding: 20px;
+   }
+
+   .title {
+      font-size: 35px;
+   }
+
+   .item-experience__company,
+   .item-education__source {
+      font-size: 16px;
+   }
+
+   .item-experience {
+      flex-direction: column-reverse;
+      gap: 10px;
+   }
+
+   .item-experience__period {
+      font-size: 14px;
+   }
+
+   .code__example {
+      justify-content: flex-start;
+   }
+
+   .avatar {
+      display: none;
+   }
+
+   .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+
+   }
+
+   .profile__thumb {
+      display: block;
+      max-width: 300px;
+   }
+}
+
+@media only screen and (max-width: 425px) {
+   .menu__list {
+      row-gap: 10px;
+   }
+
+   .title {
+      font-size: 30px;
+   }
+
+   .code {
+      display: none;
+   }
+
+   .footer__inner-container {
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+
+   .footer__git,
+   .footer__year {
+      font-size: 14px;
+   }
+
+   .footer__logo {
+      width: 50px;
+   }
+
+}
